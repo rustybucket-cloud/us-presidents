@@ -1,0 +1,18 @@
+form * {
+    display: block;
+}
+
+nav ul {
+    /* list-style-type: none;
+    display: flex;
+    gap: 1rem; */
+}
+nav a:hover {
+    background-color: aquamarine !important;
+}
+
+main {
+    padding: 0 2vw;
+    max-width: 64rem;
+    margin: auto;
+}

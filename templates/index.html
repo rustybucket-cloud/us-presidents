@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presidents</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="headerWrapper bg-primary px-2">
+        <header class="d-flex align-items-center mx-auto" style="max-width: 64rem;">
+            <h1 class="text-white">US Presidents</h1>  
+        </header>
+        <nav class="mx-auto" style="max-width: 64rem;">
+            <button aria-label="menu" class="d-md-none px-2 pt-1 position-absolute top-0 end-0 border-primary shadow-none" style="background: none;">
+                <svg width="20" height="20">
+                    <rect width="20" height="3" fill="white" y="0" />
+                    <rect width="20" height="3" fill="white" y="7" />
+                    <rect width="20" height="3" fill="white" y="14" />
+                </svg>
+            </button>
+            <ul class="list-group bg-primary d-none d-md-flex flex-row gap-3 list-unstyled">
+                <li class="list-item active"><a class="text-white text-decoration-none p-2 d-block" href="/">Presidents</a></li>
+                <li class="list-item"><a class="text-white text-decoration-none p-2 d-block" href="#">Timeline</a></li>
+                <li class="list-item"><a class="text-white text-decoration-none p-2 d-block" href="#">Compare Presidents</a></li>
+                <li class="list-item"><a class="text-white text-decoration-none p-2 d-block" href="#">Stuff</a></li>
+                <li class="list-item"><a class="text-white text-decoration-none p-2 d-block" href="#">More Stuff</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <form class="col-lg-6">
+            <label for="name">President Name
+                <input type="text" id="name" name="name" class="col-12 p-1">
+            </label>
+            <button class="btn bg-primary text-white col-12 mt-1" id="submit" type="button">Search</button>
+        </form>
+        <ol class="d-flex flex-column flex-wrap" style="max-height: 24rem;">
+            <li><a href="./presidents/george_washington">George Washington</a></li>
+            <li><a href="./presidents/john_adams">John Adams</a></li>
+            <li><a href="./presidents/thomas_jefferson">Thomas Jefferson</a></li>
+            <li><a href="./presidents/james_madison">James Madison</a></li>
+            <li><a href="./presidents/james_monroe">James Monroe</a></li>
+            <li><a href="./presidents/john_quincy_adams">John Quincy Adams</a></li>
+            <li><a href="./presidents/andrew_jackson">Andrew Jackson</a></li>
+            <li><a href="./presidents/martin_van_buren">Martin Van Buren</a></li>
+            <li><a href="./presidents/william_henry_harrison">William Henry Harrison</a></li>
+            <li><a href="./presidents/john_tyler">John Tyler</a></li>
+            <li><a href="./presidents/james_k_polk">James K. Polk</a></li>
+            <li><a href="./presidents/zachary_taylor">Zachary Taylor</a></li>
+            <li><a href="./presidents/millard_fillmore">Millard Fillmore</a></li>
+            <li><a href="./presidents/franklin_pierce">Franklin Pierce</a></li>
+            <li><a href="./presidents/james_buchanan">James Buchanan</a></li>
+            <li><a href="./presidents/abraham_lincoln">Abraham Lincoln</a></li>
+            <li><a href="./presidents/andrew_johnson">Andrew Johnson</a></li>
+            <li><a href="./presidents/ulysses_s_grant">Ulysses S. Grant</a></li>
+            <li><a href="./presidents/rutherford_b_hayes">Rutherford B. Hayes</a></li>
+            <li><a href="./presidents/james_garfield">James Garfield</a></li>
+            <li><a href="./presidents/chester_a_arthur">Chester A. Arthur</a></li>
+            <li><a href="./presidents/grover_cleveland">Grover Cleveland</a></li>
+            <li><a href="./presidents/benjamin_harrison">Benjamin Harrison</a></li>
+            <li><a href="./presidents/grover_cleveland">Grover Cleveland</a></li>
+            <li><a href="./presidents/william_mckinley">William McKinley</a></li>
+            <li><a href="./presidents/theodore_roosevelt">Theodore Roosevelt</a></li>
+            <li><a href="./presidents/william_howard_taft">William Howard Taft</a></li>
+            <li><a href="./presidents/woodrow_wilson">Woodrow Wilson</a></li>
+            <li><a href="./presidents/warren_g_harding">Warren G. Harding</a></li>
+            <li><a href="./presidents/calvin_coolidge">Calvin Coolidge</a></li>
+            <li><a href="./presidents/herbert_hoover">Herbert Hoover</a></li>
+            <li><a href="./presidents/franklin_d_roosevelt">Franklin D. Roosevelt</a></li>
+            <li><a href="./presidents/harry_s_truman">Harry S. Truman</a></li>
+            <li><a href="./presidents/dwight_d_eisenhower">Dwight D. Eisenhower</a></li>
+            <li><a href="./presidents/john_f_kennedy">John F. Kennedy</a></li>
+            <li><a href="./presidents/lyndon_b_johnson">Lyndon B. Johnson</a></li>
+            <li><a href="./presidents/richard_nixon">Richard M. Nixon</a></li>
+            <li><a href="./presidents/gerald_ford">Gerald R. Ford</a></li>
+            <li><a href="./presidents/jimmy_carter">James Carter</a></li>
+            <li><a href="./presidents/ronald_reagan">Ronald Reagan</a></li>
+            <li><a href="./presidents/george_h_w_bush">George H. W. Bush</a></li>
+            <li><a href="./presidents/bill_clinton">Bill Clinton</a></li>
+            <li><a href="./presidents/george_w_bush">George W. Bush</a></li>
+            <li><a href="./presidents/barack_obama">Barack Obama</a></li>
+            <li><a href="./presidents/donald_trump">Donald J. Trump</a></li>
+            <li><a href="./presidents/joe_biden">Joe Biden</a></li>
+        </ol>
+    </main>
+</body>
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</html>
